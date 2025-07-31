@@ -6,8 +6,7 @@ let handleLeftClick = (e) => {
   let dataId = element?.closest('[data-id]')?.getAttribute('data-id');
 
   if (dataId) {
-    window.open(`rest/data/entity/${dataId}`, '_blank');
-    window.focus();
+    window.open(`rest/data/entity/${dataId}`, '_blank', 'noopener,noreferrer');
   } else {
     alert('❌ Data-ID не найден! Кликните по строке таблицы');
   }
