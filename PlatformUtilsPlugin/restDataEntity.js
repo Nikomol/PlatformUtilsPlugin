@@ -7,6 +7,7 @@ let handleLeftClick = (e) => {
 
   if (dataId) {
     window.open(`rest/data/entity/${dataId}`, '_blank');
+    window.focus();
   } else {
     alert('❌ Data-ID не найден! Кликните по строке таблицы');
   }
